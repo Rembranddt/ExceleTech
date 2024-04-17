@@ -1,6 +1,6 @@
 namespace ExceleTech.Domain.DTO
 {
-    public class TokenDTO 
+    public sealed class TokenDTO 
     {
         public string RefreshToken { get; set; }
 
