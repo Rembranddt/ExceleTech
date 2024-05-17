@@ -15,9 +15,9 @@ namespace ExceleTech.API.Controllers;
 [Route("[Controller]")]
 public class AccountController : ControllerBase
 {
-    private readonly IMediator _mediator;
+    private readonly ISender _mediator;
 
-    public AccountController(IMediator mediator)
+    public AccountController(ISender mediator)
     {
         _mediator = mediator;
     }

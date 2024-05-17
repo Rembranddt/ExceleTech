@@ -1,4 +1,10 @@
 namespace ExceleTech.Application.DTO
 {
-    public record CreateAccountDTO(string Name, string password, string confirmPassword, string email);
+    public sealed class CreateAccountDTO
+    {
+        public string Name { get; set; }
+        public string Password { get; set; }
+        public string ConfirmPassword { get; set; }
+        public string Email { get; set; }
+    }
 }

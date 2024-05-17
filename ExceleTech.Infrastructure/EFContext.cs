@@ -14,6 +14,7 @@ namespace ExceleTech.Infrastructure
 
         public EFContext(DbContextOptions<EFContext> options) : base(options)
         {
+            // испровить
             Database.EnsureCreated();
         }
 

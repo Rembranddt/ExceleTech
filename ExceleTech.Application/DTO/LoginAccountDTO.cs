@@ -1,6 +1,6 @@
 namespace ExceleTech.Application.DTO
 {
-    public class LoginAccountDTO
+    public sealed class LoginAccountDTO
     {
         public string Login { get; set; }
 

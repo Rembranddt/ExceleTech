@@ -13,8 +13,8 @@ namespace ExceleTech.API.Controllers;
 [Route("[controller]")]
 public class BasketController : ControllerBase
 {
-    private readonly IMediator _mediator;
-    public BasketController(IMediator mediator)
+    private readonly ISender _mediator;
+    public BasketController(ISender mediator)
     {
         _mediator = mediator;
     }

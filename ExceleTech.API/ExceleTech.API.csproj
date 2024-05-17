@@ -29,10 +29,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ExceleTech.Domain\ExceleTech.Domain.csproj" />
     <ProjectReference Include="..\ExceleTech.Application\ExceleTech.Application.csproj" />
     <ProjectReference Include="..\ExceleTech.Infrastructure\ExceleTech.Infrastructure.csproj" />

@@ -3,7 +3,7 @@ using ExceleTech.Domain.Enums;
 
 namespace ExceleTech.Application.DTO
 {
-    public class ProductDTO
+    public sealed class ProductDTO
     {
         public Guid ProductId { get; init; }
         public string Name { get; init; }

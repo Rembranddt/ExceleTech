@@ -2,7 +2,7 @@
 
 namespace ExceleTech.Application.DTO
 {
-    public class OrderLineItemDTO
+    public sealed class OrderLineItemDTO
     {
         public Guid ProductId { get;set; }
         public int Quantity { get; set; }

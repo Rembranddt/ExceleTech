@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExceleTech.Application.DTO
 {
-    public sealed class SetRoleDTO(string RoleName, Guid UserId)
+    public sealed class SetRoleDTO
     {
         public string RoleName { get; set; }
         public Guid UserId { get; set; } 

@@ -12,8 +12,8 @@ namespace ExceleTech.API.Controllers
     [Route("[controller]")]
     public class ProductController
     {
-        private readonly IMediator _mediator;
-        public ProductController(IMediator mediator)
+        private readonly ISender _mediator;
+        public ProductController(ISender mediator)
         {
             _mediator = mediator;
         }

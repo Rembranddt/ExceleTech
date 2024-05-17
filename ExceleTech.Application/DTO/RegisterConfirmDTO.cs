@@ -1,6 +1,6 @@
 namespace ExceleTech.Application.DTO
 {
-    public class RegisterConfirmDTO
+    public sealed class RegisterConfirmDTO
     {
         public Guid UserId { get; set; }
 

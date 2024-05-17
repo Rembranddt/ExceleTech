@@ -32,6 +32,7 @@ namespace ExceleTech.Application.DependencyInjection
         {
             services.AddScoped<IEmailSenderService, EmailSenderService>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddTransient<IHashService, HashService>();
         }
     }
 }

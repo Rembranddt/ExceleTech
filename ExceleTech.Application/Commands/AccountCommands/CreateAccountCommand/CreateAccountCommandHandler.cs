@@ -50,9 +50,9 @@ namespace ExceleTech.Application.Commands.AccountCommands.CreateAccountCommand
                     response.AddError(ErrorMessage.UserIsAlreadyExists);
                     response.StatusCode = HttpStatusCode.Conflict;
                 }
-                string passwordHash = _hashService.HashPassword(request.CreateAccountDTO.password);
+                string passwordHash = _hashService.HashPassword(request.CreateAccountDTO.Password);
                 var user = User.Create(request.CreateAccountDTO.Name,
-                                       request.CreateAccountDTO.email,
+                                       request.CreateAccountDTO.Email,
                                        passwordHash);
 
                 
@@ -60,7 +60,7 @@ namespace ExceleTech.Application.Commands.AccountCommands.CreateAccountCommand
                 var basket = Basket.Create(result.Id);
                 _basketRepository.AddBasket(basket);
                 await _unitOfWork.SaveChangesAsync();
-                await _emailSenderService.SendAsync(request.CreateAccountDTO.email, new Random().Next(0, 1000000).ToString("D6"), result.Id);
+                await _emailSenderService.SendAsync(request.CreateAccountDTO.Email, new Random().Next(0, 1000000).ToString("D6"), result.Id);
                 _unitOfWork.CommitTransaction();
                 
 

@@ -15,7 +15,7 @@ namespace ExceleTech.Application.Validators
         {
             
             RuleFor(command => command.CreateAccountDTO
-            .email)
+            .Email)
             .NotEmpty()
             .WithMessage("Email can't be empty")
             .EmailAddress()
@@ -25,10 +25,10 @@ namespace ExceleTech.Application.Validators
 
 
             RuleFor(command => command.CreateAccountDTO
-            .password)
+            .Password)
             .MinimumLength(9)
             .WithMessage("Password lenght should be more than 8")
-            .Equal(command => command.CreateAccountDTO.confirmPassword)
+            .Equal(command => command.CreateAccountDTO.ConfirmPassword)
             .WithMessage("Passwords must match");
 
 

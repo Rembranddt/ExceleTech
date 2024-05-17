@@ -18,9 +18,10 @@ namespace ExceleTech.API.Swagger
                     TermsOfService = new Uri("https://t.me/Vivachz"),
                     Contact = new OpenApiContact()
                     {
-                        Name = "Contact",
+                        Name = "Lead",
                         Url = new Uri("https://t.me/Vivachz")
                     },
+                    
                 });
 
                 var xmlFileName = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
